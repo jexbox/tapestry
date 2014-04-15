@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jexbox.connector</groupId>
+  <artifactId>jexbox-tapestry</artifactId>
+  <version>0.0.1</version>
+  <dependencies>
+       <dependency>
+           <groupId>com.jexbox.connector</groupId>
+           <artifactId>jexbox-http</artifactId>
+           <version>0.0.1</version>
+       </dependency>
+       
+        <dependency>
+            <groupId>org.apache.tapestry</groupId>
+            <artifactId>tapestry-core</artifactId>
+            <version>${tapestry-release-version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>org.slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+       
+  </dependencies>
+  
+    <properties>
+        <tapestry-release-version>5.3.2</tapestry-release-version>
+    </properties>
+  
+</project>
