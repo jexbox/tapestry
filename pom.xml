@@ -3,6 +3,24 @@
   <groupId>com.jexbox.connector</groupId>
   <artifactId>jexbox-tapestry</artifactId>
   <version>0.0.1</version>
+  <packaging>jar</packaging>
+  <name>Jexbox Tapestry Connector</name>
+  <description>Jexbox Tapestry connector hooks as RequestExceptionHandler, so any uncaught exceptions in your Tapestry application will be sent to your Jexbox database. The connector extracts complete exception stack trace, including nested exceptions, error message and system properties and page/component traces</description>
+  <url>http://jexbox.com/connectors</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>1</id>
+      <name>Tsvetelin Saykov</name>
+      <email>tsvetelin.saykov@gmail.com</email>
+    </developer>
+  </developers>
   <dependencies>
        <dependency>
            <groupId>com.jexbox.connector</groupId>
